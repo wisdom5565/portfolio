@@ -8,13 +8,15 @@
 :root {
     --color-white :#fff;
     --color-black: #000;
-    --color-navy : #0b2639;
+    --color-beige: #ebded4;
+    --color-medium-br : #d3b094;
+    --color-brown: #704c13;
 
     --font-large : 48px;
     --font-medium : 28px;
-    --font-regular : 18px;
-    --font-small : 16px;
-    --font-micro : 14px;
+    --font-regular : 22px;
+    --font-small : 18px;
+    --font-micro : 16px;
 
     --size-border-radius : 4px;
     
@@ -32,7 +34,7 @@ body{
 
 a{
     text-decoration: none;
-    color:var(--color-white);
+    color:var(--color-brown);
 }
 
 ul {
@@ -44,7 +46,6 @@ li {
 }
 
 button {
-    background-color: lemonchiffon;
     cursor: pointer;
     border: none;
     outline: none;
@@ -78,30 +79,29 @@ p{
     justify-content: space-between;
     align-items: center;
     padding : 16px;
-    background-color: var(--color-navy);
+    background-color: var(--color-beige);
 }
 
 .navbar-logo {
     font-size: var(--font-medium);
     font-weight: bold;
-    color: var(--color-white);
+    color: var(--color-brown);
 }
 
 .navbar-menu {
     display: flex;
 }
+
 .navbar-menu-item {
     padding : 8px 12px;
     margin: 0 4px;
-    color: var(--color-white);
+    color: var(--color-brown);
+    font-size: var(--font-medium);
     cursor: pointer;
 }
-.navbar-menu-item.active {
-    border:1px solid gainsboro;
-    border-radius: var(--size-border-radius);
-}
+
 .navbar-menu-item:hover{
-    background-color:  darkcyan;
+    background-color: var(--color-beige);
     border-radius: var(--size-border-radius);
 }
 .navbar-toggle-btn {
@@ -124,19 +124,53 @@ p{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 2px solid var(--color-white);
+    border: 2px solid var(--color-brown);
 }
 
 .home-title, .home-description{
-    color:var(--color-white);
+    color:var(--color-brown);
 }
 
 .home-contact {
-    color: var(--color-white);
+    color: var(--color-medium-br);
     font-size: var(--font-regular);
     font-weight: bold;
     margin: 24px;
     padding: 8px 12px;
-    border: 2px solid var(--color-white);
+    border: 2px solid gainsboro;
     border-radius: var(--size-border-radius);
+}
+
+.section {
+    padding: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-majors {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+} 
+.major-icon {
+    width: 200px;
+    height: 200px;
+    line-height: 170px;
+    font-size: 70px;
+    margin: auto;
+    color: var(--color-brown);
+    margin-bottom: 10px;
+}
+.major-icon i {
+    transition: all var(--animation-duration) ease;
+}
+
+.major-icon:hover i {
+    color: var(--color-medium-br);
+    transform: rotate(-30deg) scale(1.1);
 }
