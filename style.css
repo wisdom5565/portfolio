@@ -283,7 +283,7 @@ p{
 
 .category-count {
     background-color: var(--color-medium-br);
-    border: 50%;
+    border-radius: 50%;
     color: var(--color-beige);
     height: 24px;
     width: 24px;
@@ -348,6 +348,72 @@ p{
     margin-top: 8px;
     background-color: var(--color-brown);
 }
+
+/* 추천서 */
+#testimonials {
+    background-color: var(--color-yellow);
+}
+
+.testmonials {
+    margin: 40px;
+}
+
+.testimonial {
+    display: flex;
+    margin: 32px 0;
+}
+
+.testimonial-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.testimonial-avatar:nth-child(odd) {
+    margin-right: 40px;
+}
+
+.testimonial-avatar:nth-child(even) {
+    margin-left: 40px;
+}
+
+.testimonial-speech-bubble {
+    padding : 18px;
+    background-color: var(--color-white);
+    border-radius: 12px;
+}
+
+.testimonial-speech-bubble p {
+    color: gray;
+}
+.testimonial-speech-bubble a {
+    color: var(--color-medium-br);
+}
+
+/* contact */ 
+#contact {
+    background-color: bisque;
+}
+.contact-title, .contact-email, .contact-rights {
+    color: var(--color-black);
+}
+
+.contact-title {
+    margin: 32px 0 ;
+}
+
+.contact-links {
+    font-size: var(--font-large);
+    margin : 24px 0 ;
+    transition: all var(--animation-duration) ease in ;
+}
+
+.contact-links i:hover {
+    transform: scale(1.1);
+    color: var(--color-yellow);
+}
+
+
 
 
 
