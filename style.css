@@ -11,6 +11,7 @@
     --color-beige: #ebded4;
     --color-medium-br : #d3b094;
     --color-brown: #704c13;
+    --color-yellow : cornsilk;
 
     --font-large : 48px;
     --font-medium : 24px;
@@ -206,3 +207,49 @@ p{
     font-size: var(--font-micro);
 }
 
+/* 기술 */
+#skills {
+    background-color: var(--color-yellow);
+}
+.skillset {
+    display: flex;
+    color: var(--color-brown);
+    margin: 20px 0;
+}
+
+.skillset-title {
+    color: var(--color-black);
+}
+
+.skillset-left {
+    flex-basis: 60%;
+    padding : 20px 40px;
+}
+
+.skill {
+    margin-bottom: 32px;
+}
+
+.skill-description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-medium-br);
+}
+
+.skill-value {
+    height: 3px;
+    background-color: var(--color-brown);
+}
+
+.skillset-right {
+    flex-basis: 40%;
+}
+
+.tools, .etc {
+    padding: 20px;
+}
