@@ -13,8 +13,8 @@
     --color-brown: #704c13;
     --color-yellow : cornsilk;
 
-    --font-large : 48px;
-    --font-medium : 24px;
+    --font-large : 45px;
+    --font-medium : 22px;
     --font-regular : 20px;
     --font-small : 16px;
     --font-micro : 14px;
@@ -122,10 +122,8 @@ p{
 }
 
 .home-photo {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 2px solid var(--color-brown);
+    width: 280px;
+    height: 280px;
 }
 
 .home-title, .home-description{
@@ -155,6 +153,33 @@ p{
 }
 
 /* 내 소개 */
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-photo {
+    width: 280px;
+    height: 280px;
+}
+.about-me-title, .about-me-job, .about-me-tag {
+    padding: 20px;
+    text-align: left;
+    border: 1px solid gainsboro;
+    background-color: var(--color-beige);
+    border-radius: 15px;
+}
+.about-me-tag {
+    display: flex;
+}
+.about-me-detail {
+    margin-left: 10px;
+}
+
+.about-me-detail:hover {
+    color: crimson;
+    transform: scale(1.2);
+}
 .about-majors {
     display: flex;
     justify-content: space-around;
