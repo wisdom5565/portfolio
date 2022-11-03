@@ -141,6 +141,7 @@ p{
     border-radius: var(--size-border-radius);
 }
 
+/* section 공통 */
 .section {
     padding: 50px;
     text-align: center;
@@ -152,6 +153,7 @@ p{
     margin: auto;
 }
 
+/* 내 소개 */
 .about-majors {
     display: flex;
     justify-content: space-around;
@@ -174,3 +176,33 @@ p{
     color: var(--color-medium-br);
     transform: rotate(-30deg) scale(1.1);
 }
+
+.major-title {
+    font-weight: bold;
+    font-size: var(--font-medium)
+}
+
+.major-title, .major-description {
+    color: var(--color-black);
+} 
+
+.job {
+    display: flex;
+    align-items: center;
+}
+.job-description {
+    margin: 0 16px;
+    text-align: left;
+}
+.job-name, .job-period {
+    color: gray;
+}
+
+.job-name {
+    font-size: var(--font-small);
+}
+
+.job-period{
+    font-size: var(--font-micro);
+}
+
