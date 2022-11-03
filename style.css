@@ -413,6 +413,45 @@ p{
     color: var(--color-yellow);
 }
 
+@media screen and (max-width:768px) {
+    .navbar-toggle-btn{
+        display: block;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .about-majors {
+        flex-direction: column;
+    }
+
+    .major {
+        margin-bottom: 38px;
+    }
+
+    .skillset {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-grow:1;
+    }
+
+    .testimonial-avatar {
+        width: 80px;
+        height: 80px;
+    }
+}
+
 
 
 
