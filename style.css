@@ -162,7 +162,7 @@ p{
     width: 280px;
     height: 280px;
 }
-.about-me-title, .about-me-job, .about-me-tag {
+.about-me-title, .about-me-job, .about-me-tag, .about-me-blog {
     padding: 20px;
     text-align: left;
     border: 1px solid gainsboro;
@@ -172,13 +172,20 @@ p{
 .about-me-tag {
     display: flex;
 }
+
 .about-me-detail {
     margin-left: 10px;
 }
 
-.about-me-detail:hover {
+.about-me-detail:hover{
     color: crimson;
     transform: scale(1.2);
+}
+.about-me-blog > a {
+    color : var(--color-black);
+}
+.about-me-blog > a:hover {
+    color : crimson;
 }
 .about-majors {
     display: flex;
