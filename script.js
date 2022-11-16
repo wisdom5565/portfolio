@@ -1,9 +1,4 @@
 'use strict';
-function scrollIntoView(selector) {
-    const scrollTo = document.querySelector(selector);
-    scrollTo.scrollIntoView({ behavior : 'smooth' })
-}
-
 // 스크롤에 따른 메뉴바 색상처리
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
@@ -93,7 +88,11 @@ workBtnContainer.addEventListener('click', (e) => {
     if(filter == null) {
         return;
     }
-
+    const active = document.querySelector('.category-btn.selected');
+    if(active !=null){
+        active.classList.remove('selected');
+    }
+    e.target.classList.add('selected');
     projectContainer.classList.add('anim-out');
     setTimeout(() => {
         projects.forEach((project) => {
@@ -166,5 +165,11 @@ window.addEventListener('wheel',() => {
     }
     selectNavItem(navItems[selectedNavIndex]);
 });
+
+function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({ behavior : 'smooth' })
+    selectNavItem(navItems[sectionIds.indexOf(selector)])
+}
 
 

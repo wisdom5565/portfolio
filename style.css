@@ -320,7 +320,7 @@ p{
     padding : 8px 48px;
 }
 
-.category-btn:active {
+.category-btn.selected {
     background-color: var(--color-beige);
 }
 
@@ -328,7 +328,7 @@ p{
     background-color: var(--color-beige);
 }
 
-.category-btn:active .category-count,
+.category-btn.selected .category-count,
 .category-btn:hover .category-count {
     opacity: 1;
     top: 0;
