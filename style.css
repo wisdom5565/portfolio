@@ -76,11 +76,20 @@ p{
 
 /* Navbar  */
 #navbar {
+    position: fixed;
+    width: 100%;
+    z-index:1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding : 16px;
     background-color: var(--color-beige);
+    transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--bold {
+    background-color: var(--color-medium-br);
+    padding: 10px;
 }
 
 .navbar-logo {
@@ -444,6 +453,27 @@ p{
     transform: scale(1.1);
     color: var(--color-yellow);
 }
+
+.arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    color: var(--color-brown);
+    background-color: rgba(0, 0, 0, 0) ;
+    border-radius: 50%;
+    position: fixed;
+    bottom : 0px;
+    right: 0px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease-in;
+}
+
+.arrow-up.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 
 @media screen and (max-width:768px) {
     .navbar-toggle-btn{

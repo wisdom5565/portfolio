@@ -10,6 +10,7 @@
     <link rel="icon" type = "image/png" href="./images/sun-removebg-preview.png">
     <script src="https://kit.fontawesome.com/a7768a368c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
+    <script defer src ="./script.js"></script>
 </head>
 <body>
     <!-- NavBar 시작 -->
@@ -18,11 +19,11 @@
             <a href="#">WISDOM</a>
         </div>
         <ul class="navbar-menu">
-            <li class="navbar-menu-item active">홈</li>
-            <li class="navbar-menu-item">소개</li>
-            <li class="navbar-menu-item">기술</li>
-            <li class="navbar-menu-item">프로젝트</li>
-            <li class="navbar-menu-item">contact</li>
+            <li class="navbar-menu-item active" data-link="#home">홈</li>
+            <li class="navbar-menu-item" data-link ="#about">소개</li>
+            <li class="navbar-menu-item" data-link ="#skills" >기술</li>
+            <li class="navbar-menu-item" data-link="#work">프로젝트</li>
+            <li class="navbar-menu-item" data-link="#contact">contact</li>
         </ul>
         <!-- 버튼 시작 -->
         <button class="navbar-toggle-btn"><i class="fa-solid fa-bars"></i></button>
@@ -37,7 +38,7 @@
             <h1 class="home-title">반갑습니다</h1>
             <h2 class="home-description">WEB DEVELOPER</h2>
             <h2 class="home-description">전지혜 입니다!</h2>
-            <!-- <button class="home-contact">연락주세요!</button> -->
+            <button class="home-contact">연락주세요!</button>
         </div>
     </section>
     <!-- Home 끝 -->
@@ -208,63 +209,63 @@
                 <h1>작업실</h1>
                 <h3>프로젝트</h3>
                 <div class="work-categories">
-                    <button class="category-btn">
+                    <button class="category-btn" data-fliter="*">
                         전체 <span class="category-count">7</span>
-                    </button>
-                    <button class="category-btn">
+                    </button> 
+                    <button class="category-btn" data-fliter="front-end">
                         프론트엔드 <span class="category-count">4</span>
                     </button>
-                    <button class="category-btn">
+                    <button class="category-btn" data-fliter="back-end">
                         백엔드 <span class="category-count">2</span>
                     </button>                
-                    <button class="category-btn">
+                    <button class="category-btn" data-fliter="etc">
                         그 외<span class="category-count">1</span>
                     </button>
                 </div>
                 <div class="work-projects">
-                    <a href="" class="project" target="_blank">
+                    <a href="" class="project" target="_blank" data-type="front-end">
                         <img src="./images/청소연구소.JPG" alt="" class="project-img">
                         <div class="project-description">
                             <h3>Spring 프로젝트</h3>
                             <span>클론코딩</span>
                         </div>
                     </a>
-                    <a href="" class="project" target="_blank">
+                    <a href="" class="project" target="_blank" data-type="back-end">
                         <img src="./images/청소연구소.JPG" alt="" class="project-img">
                         <div class="project-description">
                             <h3>AI 프로젝트</h3>
                             <span>코딩</span>
                         </div>
                     </a>
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="front-end">
                     <img src="./images/청소연구소.JPG" alt="" class="project-img">
                     <div class="project-description">
                         <h3>청소연구소</h3>
                         <span>클론코딩</span>
                     </div>
                 </a>
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="front-end">
                     <img src="./images/kitchen.jpg" alt="" class="project-img">
                     <div class="project-description">
                         <h3>키친 마이야르</h3>
                         <span>기획 코딩</span>
                     </div>
                 </a>
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="etc">
                     <img src="./images/arduino.png" alt="" class="project-img">
                     <div class="project-description">
                         <h3>인체감지 무선 팝업 전광판</h3>
                         <span>아두이노를 이용한 전광판</span>
                     </div>
                 </a>
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="back-end">
                     <img src="./images/java.png" alt="" class="project-img">
                     <div class="project-description">
                         <h3>영화관 키오스크</h3>
                         <span>JAVA Console</span>
                     </div>
                 </a>
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="front-end">
                     <img src="./images/당근마켓.JPG" alt="" class="project-img">
                     <div class="project-description">
                         <h3>당근마켓</h3>
@@ -308,12 +309,12 @@
         </div>
         <p class="contact-rights">
             2022 Wisdom - All rights reserved
-        </p>
     </section>
     <!-- contact 끝  -->
     <button class="arrow-up">
-        <i class="fa-solid fa-arrow-up"></i>
+        <i class="fa-regular fa-circle-up"></i>
     </button>
+
 
 
 </body>
